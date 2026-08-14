@@ -77,6 +77,7 @@ Contains important links and basic café information.
 6th commit||added product page |
 7th commit|14 Aug |updated About Us & enquiry page banner and page|
 8th commit| |updated all pageds and the reservation page|
+final commit| | updated all pages and added readme file.
 # References # 
 - Pexels, 2024. *cup-of-coffee*. [online] Availabe at: 
 <https://www.pexels.com/photo/cup-of-coffee-26083138/ > [Accessed 12 August 2026].
