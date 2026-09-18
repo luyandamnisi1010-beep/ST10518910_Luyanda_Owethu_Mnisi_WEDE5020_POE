@@ -77,7 +77,12 @@ Contains important links and basic café information.
 6th commit||added product page |
 7th commit|14 Aug |updated About Us & enquiry page banner and page|
 8th commit| |updated all pageds and the reservation page|
-final commit| | updated all pages and added readme file.
+final commit| | updated all pages 
+and added readme file.
+changes made |19 Sept 2026 |removed all html info and added new information and picture like the circle plate image , i added more sections like the explore page , i added a green section that explains a brief history of oak and steam.|
+about us | i added new information on top of the old information by adding sage cards that includes a tagline, also a our story section which explains oak and steam's story, i added a white card with goldish borders, and a why choose us section that gives an explanation
+
+
 # References # 
 - Pexels, 2024. *cup-of-coffee*. [online] Availabe at: 
 <https://www.pexels.com/photo/cup-of-coffee-26083138/ > [Accessed 12 August 2026].

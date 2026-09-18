@@ -23,7 +23,54 @@
            </ul>
         </nav>
     </header>
+    <main>
     <img src="IMAGES/enquiry banner.png" height="100%" width="100%">
+
+    <section id="bigbackground">
+    <h2 class="text">Reserve your seat now!</h2>
+
+    <div class="card">
+        <form action="#" method="POST">
+            <!-- Row 1: Name and Phone -->
+            <div class="inputrow">
+                <div class="inputbox">
+                    <input class="input" type="text" placeholder="Name &amp; Surname" required>
+                </div>
+                <div class="inputbox">
+                    <input class="input" type="tel" placeholder="Phone Number (optional)">
+                </div>
+            </div>
+
+            <!-- Row 2: Email -->
+            <div class="inputbox">
+                <input class="input" type="email" placeholder="Email" required>
+            </div>
+
+            <!-- Row 3: Date and Time Pickers -->
+            <div class="inputrow">
+                <div class="inputbox smallbox">
+                    <label class="labeltext">Book date:</label>
+                    <input class="input dateinput" type="date" required>
+                </div>
+                <div class="inputbox smallbox">
+                    <label class="labeltext">Book time:</label>
+                    <input class="input timeinput" type="time" required>
+                </div>
+            </div>
+
+            <!-- Row 4: Any Requests Textarea -->
+            <div class="inputbox">
+                <textarea class="input textareainput" rows="5" placeholder="Any Requests?"></textarea>
+            </div>
+
+            <!-- Submit Button Wrapper -->
+            <div class="buttoncontainer">
+                <button type="submit" id="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+    </main>
      
 
 <footer>
