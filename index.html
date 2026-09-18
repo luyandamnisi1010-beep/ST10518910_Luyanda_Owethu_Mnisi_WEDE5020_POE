@@ -4,75 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak & Steam Home</title>
-</head>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     </head>
 <body>
     
     <header>
-       
-        <nav>
-            <img src="IMAGES/logo.png" alt="oak & steam" height="10%" width="10%">
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="product.html">Products</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-           <button><a href="reservation.html">Reservation</a></button> 
-        </nav>
-    </header>
-    <h1>Welcome to Oak & Steam</h1>
-    <p>
-        A local cafe established in 2019, where every cup tells a story from coffee that is filled with richness and quality to freshly baked pastries and treats. Oak & Steam is the perfect place to slow down, relax and hang with friends.
-    </p>
-    <h3>
-        <a href="product.html">View our menu</a>
-    </h3>
-    <img src="IMAGES/Latte.jpg" height="150px" width="150px">
-    <p>
-        Latte
-        
-        <br>Silky steamed milk meets rich espresso,Smooth,
-        <br> warm and effortlessly indulgent
-        <br> R45.00
-    </p>
-    <img src="IMAGES/Amber spice Toddy.jpg" height="150px" width="150px">
-    <p>
-        Amber spice Toddy
-        <br>Warm cinnamom, star anise, 
-        <br>and citrus steeped to golden perfection.Cozy in every sip.
-        <br> R50.00
-    </p>
-    <img src="IMAGES/Melt & Crack.jpg" height="150px" width="150px">
-    <p>
-        Melt & Cracky
-        <br>Crisp edges, gooey chocolate center.
-        <br>Baked fresh, best enjoyed warm 
-        <br> R45.00
-    </p>
-    <footer>
-         <h3>Follow Us</h3>
-
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <p>
-            <h4>Working Hours:</h4>
-            Monday- Friday 10am - 6pm
-            <br> 
-            Saturday - Sunday 10am - 2pm
-            <br>
-            Public holidays - 10am - 1pm
-        </p>
-        <h4>Futher Links:</h4>
-        <ul>
-           <li><a href="index.html">Home</a></li> 
-           <li><a href="about_us.html">About Us</a></li> 
+        <nav class="Navigation">
+            <div id="logo"> 
+                <img src="IMAGES/logo.png" alt="oak & steam">
+            </div>
+            <ul class="Links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
             <li><a href="product.html">Products</a></li>
             <li><a href="enquiry.html">Enquiry</a></li>
-           <li><a href="contact.html">Contact</a></li> 
-          <li><a href="reservation.html">Reservation</a></li>
-        </ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="reservationbtn" href="reservation.html">Reservation</a></li>
+           </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section class="firstSec">
+            <div class="Text">
+                <h1>Welcome to <span>Oak & Steam</span>,<br>Where Every Cup<br>Tells a <span>Story</span></h1>
+                <p>
+                    Your cosy corner for coffee, creating<br>memories and connections.
+                </p>
+            </div>
+            <div class="image">
+                <img src="IMAGES/pic.png" alt="Coffee layout">
+            </div>
+        </section>
+    
+    <section class="vcard">
+    <div class="vbackground">
+    <h2>
+    Explore Our Pages
+    </h2>
+    </div>
+
+ <div class="cardscontainer">
+
+    <div class="cards">
+    <div class="img">
+        <img src="IMAGES/coffee.jpg" >
+        </div>
+    <h3>
+        Coffee
+     </h3>   
+    <p>
+        Freshly brewed coffee filled with richness.
+    </p>
+     <a class="btn" href="product.html">View Products ></a>
+    </div>
+     
+    <div class="card1">
+       <div class="img">
+         <img src="IMAGES/pastries.jpg">
+        </div>
+        <h3>
+          Pastries
+        </h3>
+        <p>
+         Freshly baked pastries, goodies and treats made with good quality ingredients.
+       </p>
+       <a class="btn" href="product.html">View Products ></a>
+    </div>
+
+    <div class="card2">
+    <div class="img">
+    <img src="IMAGES/tea.jpg">
+    </div>
+    <h3>
+        Tea
+    </h3>
+    <p>
+     Handmade and herbal teas, perfect a calm moments
+    </p>
+    <a class="btn" href="product.html">View Products ></a>
+    </div>
+
+    </div>
+    </section>
+
+<!--green section-->
+    <section class="about">
+        <div class="aboutcontainer">
+            <div class="aboutimg">
+                <img src="IMAGES/about.">
+            </div>
+
+            <div class="textabout">
+                <h2><span>Oak & Steam</span> is more than just a cafe.</h2>
+                <p>
+                    Oak & Steam started in 2019 in Pretoria, South Africa. 
+                    When two friends with a love for quality coffee, artisan tea 
+                    and freshly baked goods decided to open a place where people 
+                    can come and connect through what they're passionate about.
+                </p>
+                <p>
+                  What started off small gradually grew into a friendly community 
+                    space where people come to relax and put their minds at ease.  
+                </p>
+                <a class="aboutbtn" href="about_us.html">Discover Our Story ></a>
+            </div>
+
+        </div>
+<!-- connect -->
+    </section>
+    <section class="connect">
+        <div class="connectcontainer">
+            <h2>Come and Connect with Us</h2>
+            <div class="underline"></div>
+            
+            <p class="description">
+                Looking for a cafe where you can start your mornings, catch up with work or catch up with friends ?<br>
+                <span>Oak & Steam</span> is the place for you, and it's always ready to welcome you.
+            </p>
+            
+            <div class="connectlinks">
+                <a href="contact.html">Visit Us ></a>
+                <a href="reservation.html">Plan your reservations ></a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footercont">
+        <!-- Logo Column -->
+        <div class="footer">
+            <div class="logofooter">
+                <img src="IMAGES/footer.png" alt="Oak & Steam">
+            </div>
+        </div> <!-- ADDED MISSING CLOSING TAG HERE -->
+
+        <!-- Working Hours Column -->
+        <div class="column">
+            <h4>Working Hours</h4>
+            <p>Mon - Fri 07:00 - 19:00</p>
+            <p>Sat - Sun 08:00 - 18:00</p>
+            <p>Public Holiday 08:00 - 16:00</p>
+        </div>
+
+        <!-- Links Column -->
+        <div class="linkcol">
+            <h4>Further Link</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="copy">
         <p>2026 Oak & Steam Copyright Reserved</p>
-    </footer>
+    </div>
+</footer>
 
 
 
