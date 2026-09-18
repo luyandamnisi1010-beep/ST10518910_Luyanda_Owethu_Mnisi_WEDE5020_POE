@@ -4,148 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak & Steam Product</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-     <header>
-       
-        <nav>
-            <img src="IMAGES/logo.png" alt="oak & steam" height="100px" width="100px">
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="product.html">Products</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-           <button><a href="reservation.html">Reservation</a></button> 
-        </nav>
-        <br>
-    </header>
-    <img src="IMAGES/products_banner.png" alt="Product Banner">
-    <h1>Products</h1>
-    <p>Brewed with Character, Baked with love.</p>
-
-    <h2>Category</h2>
-
-    <a href="#coffe">Coffee</a>
-    <a href="#Tea">Tea</a>
-     <a href="#Pastries">Pastries</a>
-
-     <h2 id="coffee">Coffee</h2>
-     <img src="IMAGES/Latte.jpg" height="150px" width="150px">
-     <p>
-        Latte
-        <br>Silky steamed milk meets rich espresso,Smooth,
-        <br> warm and effortlessly indulgent
-        <br> R45.00
-    </p>
-    <img src="IMAGES/Black_coffe.jpg" alt="Black Coffee" height="150px" width="150px">
-    <p>Black Coffee<br>
-    "Bold, Dark and unapologetically brewed.""
-    <br>
-    Pure coffee , no distrations just a smooth, rich kick to start your day.
-    <br>
-    R30.00
-    </p>
-    <img src="IMAGES/caffe latte.jpg" alt="Cafe Latte" height="150px" width="150px">
-    <p>Cafe Latte<br>
-    "Latte Love in Every Sip"
-    <br>
-   Silky steamed milk meets rich esspresso for a creamy cup that knows how to keep things smooth. 
-    <br>
-    R40.00
-    </p>
-    <img src="IMAGES/Espresso mocha.jpg" alt="Espresso Mocha" height="150px" width="150px">
-    <p>Espresso Mocha<br>
-    "Espresso Yourself, But make it Chocolate."
-    <br>
-    Bold esspresso, velvety chocolate and creamy milk comes together for a mocha made to satisy your sweet side.
-    <br>
-    R45.00
-    </p>
-    <h2 id="Tea">Tea</h2>
-    <img src="IMAGES/Amber spice Toddy.jpg" height="150px" width="150px">
-    <p>
-        Amber spice Toddy
-        <br>Warm cinnamom, star anise, 
-        <br>and citrus steeped to golden perfection.Cozy in every sip.
-        <br> R50.00
-    </p>
-     <img src="IMAGES/Garden Glow.jpg" height="150px" width="150px">
-     <p>Garden Glow<br>
-    "Garden infused  tea with fragant botanicals"
-    <br>
-    light, soothing and blooming with flavour.
-    <br>
-    R45.00
-    </p>
-     <img src="IMAGES/Apple ember.jpg" height="150px" width="150px">
-     <p>Apple Ember<br>
-    "Apple and Berry blend with a sweet-tart twist"
-    <br>
-    A warm blend of apple and berries with a twist of sweet-tart
-    <br>
-    R45.00
-    </p>
-     <img src="IMAGES/Golden spice.jpg" height="150px" width="150px">
-     <p>Golden Spice<br>
-    "Rich spiced tea with citrus,cinnamon and Aromatic botanicals"
-    <br>
-    Warm, vibrant, and exquisitely robust, this tea is richly flavored with citrus, cinnamon, and aromatic botanicals.
-    <br>
-    R50.00
-    </p>
-    <h2 id="Pastries">Pastries</h2>
-    <img src="IMAGES/Melt & Crack.jpg" height="150px" width="150px">
-    <p>
-        Melt & Cracky
-        <br>Crisp edges, gooey chocolate center.
-        <br>Baked fresh, best enjoyed warm 
-        <br> R45.00
-    </p>
-    <img src="IMAGES/Golden Fold.jpg" height="150px" width="150px">
-    <p>
-        Golden Fold
-        <br>"Folded with love, flaky by nature"
-        <br>Buttery, flaky and baked to golden perfection crisp on the outside, soft at the heart.
-        <br> R50.00
-    </p>
-    <img src="IMAGES/Berry Bliss.jpg" height="150px" width="150px">
-    <p>
-        Berry Bliss
-        <br>“Berry good things come in flaky layers.”
-        <br>A delicate pastry topped with silky cream and fresh strawberries for the perfect sweet bite
-        <br> R55.00
-    </p>
-    <img src="IMAGES/Berry Crown.jpg" height="150px" width="150px">
-    <p>
-        Berry Crown
-        <br>“Fall for the filling, stay for the flavour.”
-        <br>Golden pastry layered with creamy custard and topped with fresh berries for a bright, sweet finish.
-        <br> R56.00
-    </p>
-    <footer>
-         <h3>Follow Us</h3>
-
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <h4>Working Hours:</h4>
-            Monday- Friday 10am - 6pm
-            <br> 
-            Saturday - Sunday 10am - 2pm
-            <br>
-            Public holidays - 10am - 1pm
-        <h4>Futher Links:</h4>
-        <ul>
-           <li><a href="index.html">Home</a></li> 
-           <li><a href="about_us.html">About Us</a></li> 
-            <li><a href="product.html">Products</a></li>
+<body class="productpage">
+  <header>
+        <nav class="Navigation">
+            <div id="logo"> 
+                <img src="IMAGES/logo.png" alt="oak & steam">
+            </div>
+            <ul class="Links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a  class="active" href="product.html">Products</a></li>
             <li><a href="enquiry.html">Enquiry</a></li>
-           <li><a href="contact.html">Contact</a></li> 
-          <li><a href="reservation.html">Reservation</a></li>
-        </ul>
-        <p>2026 Oak & Steam Copyright Reserved</p>
-    </footer>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="reservationbtn" href="reservation.html">Reservation</a></li>
+           </ul>
+        </nav>
+    </header>
 
+
+
+<main>
+    <section class="producth">
+         <div class="banner1">
+          <img src="IMAGES/products_banner.png" alt="Product Banner">
+        <div class="banner2">
+         <div class="banners3">
+          <h1>Products</h1>
+          <p id="tagline1">Brewed with Character, Baked with love.</p>
+        </div>
+        </div>
+    </div>
+
+    <section class="Menucon">
+        <div class="menu">
+        <div class="Menupara">
+            <h1 class="menutitle">Our Menu</h1>
+            <p>Made with care, Served with warmth.<br>From homemade tea and freshly brewed coffee to freshly baked goods.Our Menu is made for every cafe moment!</p>
+        </div>
+        </div>
+    </section>
+    
+<nav class="category">
+    <a href="#coffee" class="button">Coffee</a>
+    <a href="#tea" class="button">Tea</a>
+    <a href="#pastries" class="button">Pastries</a>
+</nav>
+
+
+
+
+<section class="products-menu-container">
+
+    <!-- COFFEE SECTION -->
+    <div id="coffee" class="category-block">
+        <h2 class="category-heading">Coffee</h2>
+        <div class="product-grid">
+            
+            <div class="product-card sage-card">
+                <div class="card-image">
+                    <img src="IMAGES/1.png">
+                </div>
+                <h3>Signature Flat White</h3>
+                <p>Smooth espresso topped with micro-foamed milk and delicate latte art.</p>
+                <span class="price">R35.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations ></a>
+            </div>
+
+            
+            <div class="product-card sage-card">
+                <div class="card-image">
+                    <img src="IMAGES/2.png">
+                </div>
+                <h3>Classic Americano</h3>
+                <p>Rich espresso shots diluted with hot water for a bold, crisp finish.</p>
+                <span class="price">R36.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations >;</a>
+            </div>
+
+           
+            <div class="product-card sage-card">
+                <div class="card-image">
+                    <img src="IMAGES/4.png">
+                </div>
+                <h3>Vanilla Cappuccino</h3>
+                <p>Rich espresso layered with steamed milk, creamy foam, and subtle vanilla notes.</p>
+                <span class="price">R34.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations ></a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="tea" class="category-block">
+        <h2 class="category-heading">Tea</h2>
+        <div class="product-grid">
+            <!-- Card 1 -->
+            <div class="product-card tan-card">
+                <div class="card-image">
+                    <img src="IMAGES/6.png">
+                </div>
+                <h3>Jasmine Blossom Green Tea</h3>
+                <p>Delicate green tea infused with whole blooming jasmine flowers and herbs.</p>
+                <span class="price">R45.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations ></a>
+            </div>
+
+            
+            <div class="product-card tan-card">
+                <div class="card-image">
+                    <img src="IMAGES/5.png">
+                </div>
+                <h3>Spiced Citrus Apple Infusion</h3>
+                <p>Warm herbal tea steeped with dried fruit, apple, and whole aromatic spices.</p>
+                <span class="price">R48.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations >;</a>
+            </div>
+
+           
+            <div class="product-card tan-card">
+                <div class="card-image">
+                    <img src="IMAGES/8.png">
+                </div>
+                <h3>Hibiscus Floral Elixir</h3>
+                <p>Rich ruby herbal brew garnished with delicate edible pink petals.</p>
+                <span class="price">R35.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations >;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PASTRIES SECTION -->
+    <div id="pastries" class="category-block">
+        <h2 class="category-heading">Pastries</h2>
+        <div class="product-grid">
+            
+            <div class="product-card sage-card">
+                <div class="card-image">
+                    <img src="IMAGES/choccake.jpg" alt="Chocolate Slice">
+                </div>
+                <h3>Signature Flat White</h3>
+                <p>Smooth espresso topped with micro-foamed milk and delicate latte art.</p>
+                <span class="price">R35.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations ></a>
+            </div>
+
+           
+            <div class="product-card sage-card">
+                <div class="card-image">
+                    <img src="IMAGES/berrytart.jpg" alt="Fruit Tart">
+                </div>
+                <h3>Classic Americano</h3>
+                <p>Rich espresso shots diluted with hot water for a bold, crisp finish.</p>
+                <span class="price">R36.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations ></a>
+            </div>
+
+           
+            <div class="product-card sage-card">
+                <div class="card-image">
+                    <img src="IMAGES/raspberrytart.jpg" alt="Raspberry Tart">
+                </div>
+                <h3>Vanilla Cappuccino</h3>
+                <p>Rich espresso layered with steamed milk, creamy foam, and subtle vanilla notes.</p>
+                <span class="price">R34.00</span>
+                <a href="reservation.html" class="reservation-link">Make reservations ></a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footercont">
+        <!-- Logo Column -->
+        <div class="footer">
+            <div class="logofooter">
+                <img src="IMAGES/footer.png" alt="Oak & Steam">
+            </div>
+        </div> <!-- ADDED MISSING CLOSING TAG HERE -->
+
+        <!-- Working Hours Column -->
+        <div class="column">
+            <h4>Working Hours</h4>
+            <p>Mon - Fri 07:00 - 19:00</p>
+            <p>Sat - Sun 08:00 - 18:00</p>
+            <p>Public Holiday 08:00 - 16:00</p>
+        </div>
+
+        <!-- Links Column -->
+        <div class="linkcol">
+            <h4>Further Link</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div id="copy">
+        <p>2026 Oak & Steam Copyright Reserved</p>
+    </div>
+</footer>
 
 
 
