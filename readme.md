@@ -140,7 +140,45 @@ reservation| | information is still the same changes added were css text field f
 
 - W3Schools (2024) CSS Layout - Flexbox and Media Queries. Available at: https://www.w3schools.com/css/css3_flexbox.asp (Accessed: 18 September 2026).
 
+- FreeCodeCamp (2020) CSS Flexbox Course - Full Tutorial for Beginners. Available at: https://www.youtube.com/watch?v=K74l26pE4YA (Accessed: 19 September 2026).
 
+- FreeCodeCamp (2021) Responsive Web Design Tutorial - HTML5 and CSS3 Essentials. Available at: https://www.youtube.com/watch?v=zJSY8tbf_ys (Accessed: 19 September 2026).
+
+- Kevin Powell (2019) Learn Flexbox the Easy Way. Available at: https://www.youtube.com/watch?v=u044iM9xsWU (Accessed: 19 September 2026).
+
+- Kevin Powell (2020) CSS Media Queries for Beginners. Available at: https://www.youtube.com/watch?v=2KL-z9A56SQ (Accessed: 19 September 2026).
+
+- Kevin Powell (2021) How to Center Anything with CSS. Available at: https://www.youtube.com/watch?v=njdJeu95p6s (Accessed: 19 September 2026).
+
+- Kevin Powell (2022) Stop Using Pixels for Font Size! Use rem and em Instead. Available at: https://www.youtube.com/watch?v=N5wpD9OV_To (Accessed: 19 September 2026).
+
+- Kevin Powell (2023) Designing Responsive HTML Forms Step by Step. Available at: https://www.youtube.com/watch?v=fA9M6M1Wn30 (Accessed: 19 September 2026).
+
+Online Tutorials (2020) How to Create Responsive Navigation Bar using HTML CSS. Available at: https://www.youtube.com/watch?v=FEmysQARWFU (Accessed: 19 September 2026).
+
+- Online Tutorials (2021) Responsive Contact Us Page Design using HTML and CSS. Available at: https://www.youtube.com/watch?v=vtq3M2hAnj0 (Accessed: 19 September 2026).
+
+- Online Tutorials (2022) How to Make a Responsive Footer using HTML and CSS. Available at: https://www.youtube.com/watch?v=YOb67OKw62E (Accessed: 19 September 2026).
+
+- Programming with Mosh (2021) HTML & CSS Tutorial for Beginners: Responsive Design. Available at: https://www.youtube.com/watch?v=hu-q2zYwEYs (Accessed: 19 September 2026).
+
+- SuperSimpleDev (2022) HTML & CSS Full Course - Build Real World Websites. Available at: https://www.youtube.com/watch?v=G3e-cpL7ofc (Accessed: 19 September 2026).
+
+- Tech2 carefully (2021) Responsive Contact Us Section Design with Google Map HTML & CSS. Available at: https://www.youtube.com/watch?v=2T_O2C22GjM (Accessed: 19 September 2026).
+
+- Traversy Media (2018) Flexbox CSS In 20 Minutes. Available at: https://www.youtube.com/watch?v=JJSoEo8JSnc (Accessed: 19 September 2026).
+
+- Traversy Media (2019) Responsive Web Design & Media Queries Tutorial. Available at: https://www.youtube.com/watch?v=y3UH2gS26_8 (Accessed: 19 September 2026).
+
+- Traversy Media (2020) HTML5 Form Validation & Custom Inputs Tutorial. Available at: https://www.youtube.com/watch?v=rsd4Fng4xnU (Accessed: 19 September 2026).
+
+- Traversy Media (2022) Build a Mobile Responsive Website Header and Navigation. Available at: https://www.youtube.com/watch?v=p1Gy986_5Ok (Accessed: 19 September 2026).
+
+- Web Dev Simplified (2020) Learn CSS Flexbox in 15 Minutes. Available at: https://www.youtube.com/watch?v=fYq5PXgSsbE (Accessed: 19 September 2026).
+
+- Web Dev Simplified (2021) How to Create Responsive Website Layouts Without Frameworks. Available at: https://www.youtube.com/watch?v=68O6eOGAGqA (Accessed: 19 September 2026).
+
+- Web Dev Simplified (2022) How To Use HTML Picture Tag For Responsive Images. Available at: https://www.youtube.com/watch?v=szJ48InA3_0 (Accessed: 19 September 2026).
 
 
 
