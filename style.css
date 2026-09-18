@@ -75,7 +75,125 @@ header {
 .reservationbtn:hover {
     background: #B56E45;
 }
-/* INTRO*/
+
+
+#bigbackground {
+    background-color: #D6C5B3; /* Warm beige background */
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.text {
+    color: #FFFFFF;
+    font-size: 2.25rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.card {
+    background-color: #A3B18A; 
+    border-radius: 2rem;
+    padding: 2.5rem 3rem;
+    width: 100%;
+    max-width: 50rem; /* ~800px */
+    box-sizing: border-box;
+}
+
+/* Layout Utilities */
+.inputrow {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.inputbox {
+    flex: 1;
+    margin-bottom: 1.25rem;
+}
+
+.smallbox {
+    flex: 0 1 45%;
+    margin-bottom: 0;
+}
+
+/* Labels */
+.labeltext {
+    display: block;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+/* General Input Styling */
+.input {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #FFFFFF;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+.input::placeholder {
+    color: #8D8D8D;
+}
+
+
+.textareainput {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#btn {
+    background-color: #D4B43B;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.8rem 3.5rem;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #B89B2E;
+}
+
+@media (max-width: 48rem) {
+    .card {
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+    }
+
+    .inputrow {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .inputbox {
+        margin-bottom: 1rem;
+    }
+}
 .firstSec {
     position: relative;
     min-height: 450px;
@@ -83,7 +201,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0 40px 2%; /* Left padding holds text in place; right padding is 0 for image bleed */
+    padding: 40px 0 40px 2%; 
     overflow: hidden;
 }
 
@@ -102,7 +220,7 @@ header {
 }
 
 .Text h1 span {
-    color: #CBA243; /* Warm gold tone matching the screenshot */
+    color: #CBA243; 
 }
 
 .Text p {
@@ -114,15 +232,28 @@ header {
     font-weight: 300;
 }
 
-/* Image Positioning to Match Design */
+
 .image{
     width: 55%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    right: -12%; /* Shifts the image slightly off the right edge of the screen */
+    right: -12%;
 }
+.cardscontainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    margin-top: -140px; 
+    position: relative;
+    z-index: 10;
+}
+
 
 .image img {
     width: 110%;
@@ -136,16 +267,16 @@ header {
 /* V CARD AND 3 CARDS*/
 .vcard {
     position: relative;
-    /* The light cream background color behind the V-shape */
+
     background-color: #F8EFE6; 
     padding-bottom: 70px;
 }
 
-/* Creates the dark brown top area with the V-shaped bottom cutout */
+
 .vbackground {
     background-color: #3B2A20;
     padding-top: 20px;
-    padding-bottom: 160px; /* Gives room for title and pushes the V down */
+    padding-bottom: 160px; 
     text-align: center;
     /* clip-path coordinates: Top-Left, Top-Right, Bottom-Right-Angle, Bottom-Center-V-Point, Bottom-Left-Angle */
     clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 100%, 0 65%);
@@ -158,49 +289,10 @@ header {
     font-weight: 400;
 }
 
-/* Small gold underline underneath the section heading */
 
-
-/* Layout container for placing the 3 cards side-by-side */
-.cardscontainer {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-    /* Negative margin pulls the cards up into the V-shaped cutout area */
-    margin-top: -140px; 
-    position: relative;
-    z-index: 10;
-}
 
 /* Individual Card Styling */
 .cards{
-    background-color: #E8D8C3; /* Warm tan/cream card color */
-    border: 3px solid #CBA243;  /* Gold border around each card */
-    border-radius: 35px;        /* Round smooth corners */
-    padding: 20px;
-    width: 320px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 8px 20px black;
-}
-.card1 {
-    background-color: #E8D8C3; /* Warm tan/cream card color */
-    border: 3px solid #CBA243;  /* Gold border around each card */
-    border-radius: 35px;        /* Round smooth corners */
-    padding: 20px;
-    width: 320px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 8px 20px black;
-}
-.card2 {
     background-color: #E8D8C3; /* Warm tan/cream card color */
     border: 3px solid #CBA243;  /* Gold border around each card */
     border-radius: 35px;        /* Round smooth corners */
@@ -316,6 +408,30 @@ header {
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     padding-bottom: 12px;
+}
+.card1 {
+    background-color: #E8D8C3; /* Warm tan/cream card color */
+    border: 3px solid #CBA243;  /* Gold border around each card */
+    border-radius: 35px;        /* Round smooth corners */
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px black;
+}
+.card2 {
+    background-color: #E8D8C3; /* Warm tan/cream card color */
+    border: 3px solid #CBA243;  /* Gold border around each card */
+    border-radius: 35px;        /* Round smooth corners */
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px black;
 }
 
 .textabout h2 span {
@@ -513,6 +629,72 @@ footer {
 
 
 
+
+
+
+
+/* ========================================================
+   1. WHY CHOOSE US SECTION (BEIGE & ORANGE CARD)
+   ======================================================== */
+.choose{
+    background-color: #D9CBB6; /* Beige background */
+    padding: 20px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.choosetitle {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.titleunderline1 {
+    width: 120px;
+    height: 3px;
+    background-color: #8C5332; /* Darker brown underline accent */
+    border-radius: 2px;
+    margin-bottom: 35px;
+}
+
+/* Orange Vision & Mission Card */
+.visionmission{
+    background-color: #D96B00; /* Warm orange tone matching image */
+    border-radius: 35px;
+    padding: 40px 50px;
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.vmcolumn {
+    flex: 1;
+    text-align: center;
+}
+
+.vmcolumn h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #FFD27D; /* Soft yellow heading text */
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.vmcolumn p {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+}
 .aboutus{
     width: 100%;
     background-color: #3B2A20;
@@ -715,72 +897,6 @@ color: #CFB53B;
 
 
 
-/* ========================================================
-   1. WHY CHOOSE US SECTION (BEIGE & ORANGE CARD)
-   ======================================================== */
-.choose{
-    background-color: #D9CBB6; /* Beige background */
-    padding: 20px 20px 60px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.choosetitle {
-    font-family: 'Playfair Display', Georgia, serif;
-    color: #FFFFFF;
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 6px;
-}
-
-.titleunderline1 {
-    width: 120px;
-    height: 3px;
-    background-color: #8C5332; /* Darker brown underline accent */
-    border-radius: 2px;
-    margin-bottom: 35px;
-}
-
-/* Orange Vision & Mission Card */
-.visionmission{
-    background-color: #D96B00; /* Warm orange tone matching image */
-    border-radius: 35px;
-    padding: 40px 50px;
-    max-width: 950px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
-.vmcolumn {
-    flex: 1;
-    text-align: center;
-}
-
-.vmcolumn h3 {
-    font-family: 'Playfair Display', Georgia, serif;
-    color: #FFD27D; /* Soft yellow heading text */
-    font-size: 22px;
-    font-weight: 400;
-    margin-bottom: 12px;
-}
-
-.vmcolumn p {
-    font-family: 'Playfair Display', Georgia, serif;
-    color: #FFFFFF;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    margin: 0;
-}
-
-
-
-
 /* JOIN OUR STORY */
 
 .joinstory {
@@ -858,22 +974,6 @@ color: #CFB53B;
 .visitbtn:hover {
     background-color: #6E200A;
 }
-
-
-
-
-
-
-
-
-
-
-/* Prouducts */
-
-
-
-
-
 
 
 
@@ -1163,7 +1263,6 @@ html {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* COLOR VARIANTS */
 .sage-card {
     background-color: #B5C0A4; /* Sage green background */
 }
@@ -1172,7 +1271,6 @@ html {
     background-color: #D8C7AD; /* Warm tan background */
 }
 
-/* CARD IMAGE CONTAINER */
 .card-image {
     width: 100%;
     height: 200px;
@@ -1188,7 +1286,7 @@ html {
     object-position: center;
 }
 
-/* CARD TEXT STYLES */
+
 .product-card h3 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 17px;
@@ -1227,7 +1325,7 @@ html {
     text-decoration: underline;
 }
 
-/* RESPONSIVE LAYOUT */
+
 @media (max-width: 900px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1264,7 +1362,7 @@ html {
 /* ENQUIRY */
 
 
-/* ENQUIRY HERO BANNER */
+
 .enquiry-hero {
     width: 100%;
     background-color: #D9CBB6; /* Warm beige background matching outer layout */
@@ -1288,7 +1386,7 @@ html {
     object-position: center;
 }
 
-/* CENTERED BROWN OVERLAY BADGE */
+
 .enquiry-badge {
     position: absolute;
     top: 55%;
@@ -1329,7 +1427,7 @@ html {
 
 
 
-/* OUTER MAIN SECTION */
+
 .enquiry-main-section {
     background-color: #D9CBB6; /* Warm beige background */
     padding: 50px 20px 80px 20px;
@@ -1349,9 +1447,7 @@ html {
     margin-bottom: 20px;
 }
 
-/* ========================================================
-   1. ENQUIRE FORM STYLES
-   ======================================================== */
+
 .form-container {
     width: 100%;
     max-width: 800px;
@@ -1406,7 +1502,7 @@ html {
 }
 
 .submit-btn {
-    background-color: #D3B33D; /* Mustard yellow button */
+    background-color: #D3B33D;
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
@@ -1421,9 +1517,7 @@ html {
     background-color: #BBA032;
 }
 
-/* ========================================================
-   2. FAQ ACCORDION STYLES
-   ======================================================== */
+
 .faq-container {
     width: 100%;
     max-width: 800px;
@@ -1496,7 +1590,7 @@ html {
 
 /* contacts */
 
-/* CONTACT HERO BANNER */
+
 .contact {
     width: 100%;
     background-color: #D9CBB6; /* Warm beige outer container background */
@@ -1520,7 +1614,7 @@ html {
     object-position: center;
 }
 
-/* CENTERED BROWN OVERLAY BADGE */
+
 .contactb {
    position: absolute;
     top: 50%;
@@ -1551,7 +1645,7 @@ html {
     margin: 0;
     font-weight: 300;
 }
-/* OUTER CONTAINER */
+
 .contactmain{
     background-color: #D9CBB6; /* Warm beige background */
     padding: 50px 20px 80px 20px;
@@ -1570,7 +1664,7 @@ html {
     margin-bottom: 35px;
 }
 
-/* SIDE-BY-SIDE CARDS WRAPPER */
+
 .contactcards {
     display: flex;
     justify-content: center;
@@ -1580,7 +1674,7 @@ html {
     margin-bottom: 50px;
 }
 
-/* CARD BASE STYLES */
+
 .contactinfocard,
 .feedback-card {
     flex: 1;
@@ -1600,7 +1694,6 @@ html {
     margin-bottom: 25px;
 }
 
-/* LEFT CARD (BROWN) */
 .browncard {
     background-color: #8C5338; /* Warm terracotta brown background */
     display: flex;
@@ -1631,7 +1724,7 @@ html {
     line-height: 1.3;
 }
 
-/* RIGHT CARD (SAGE GREEN FORM) */
+
 .sagecard {
     background-color: #B5C0A4; /* Sage green background */
     position: relative;
@@ -1665,7 +1758,7 @@ html {
     resize: vertical;
 }
 
-/* SUBMIT BUTTON */
+
 .submitbtn {
     display: flex;
     justify-content: center;
@@ -1688,7 +1781,7 @@ html {
     background-color: #BBA032;
 }
 
-/* GOOGLE MAPS WRAPPER */
+/* /* GOOGLE MAPS  */
 .map {
     width: 100%;
     max-width: 950px;
@@ -1700,126 +1793,6 @@ html {
 
 
 
-/* Container Background */
-#bigbackground {
-    background-color: #D6C5B3; /* Warm beige background */
-    padding: 3rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-/* Heading Text */
-.text {
-    color: #FFFFFF;
-    font-size: 2.25rem;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-/* Main Green Form Card */
-.card {
-    background-color: #A3B18A; /* Soft sage green card */
-    border-radius: 2rem;
-    padding: 2.5rem 3rem;
-    width: 100%;
-    max-width: 50rem; /* ~800px */
-    box-sizing: border-box;
-}
-
-/* Layout Utilities */
-.inputrow {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1.25rem;
-}
-
-.inputbox {
-    flex: 1;
-    margin-bottom: 1.25rem;
-}
-
-.smallbox {
-    flex: 0 1 45%;
-    margin-bottom: 0;
-}
-
-/* Labels */
-.labeltext {
-    display: block;
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: #000000;
-    margin-bottom: 0.5rem;
-}
-
-/* General Input Styling */
-.input {
-    width: 100%;
-    padding: 0.85rem 1.25rem;
-    border-radius: 0.6rem;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    font-size: 0.95rem;
-    background-color: #FFFFFF;
-    color: #333333;
-    box-sizing: border-box;
-}
-
-.input::placeholder {
-    color: #8D8D8D;
-}
-
-/* Textarea Specifics */
-.textareainput {
-    resize: vertical;
-    min-height: 8rem;
-}
-
-/* Centered Gold Submit Button */
-.buttoncontainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-#btn {
-    background-color: #D4B43B; /* Mustard yellow button */
-    color: #FFFFFF;
-    border: none;
-    padding: 0.8rem 3.5rem;
-    font-size: 1.1rem;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 600;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#btn:hover {
-    background-color: #B89B2E;
-}
-
-/* Responsive adjustments for mobile */
-@media (max-width: 48rem) {
-    .card {
-        padding: 1.5rem;
-        border-radius: 1.25rem;
-    }
-
-    .inputrow {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .inputbox {
-        margin-bottom: 1rem;
-    }
-}
 
 
 
