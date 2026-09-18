@@ -4,63 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak & Steam Reservations</title>
+         <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="IMAGES/logo.png" alt="oak & steam" height="100px" width="100px">
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="product.html">Products</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-           <button><a href="reservation.html">Reservation</a></button> 
+     <header>
+        <nav class="Navigation">
+            <div id="logo"> 
+                <img src="IMAGES/logo.png" alt="oak & steam">
+            </div>
+            <ul class="Links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a  href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a  class="reservationbtn" class="active" href="reservation.html">Reservation</a></li>
+           </ul>
         </nav>
     </header>
     <img src="IMAGES/enquiry banner.png" height="100%" width="100%">
-     <h1>Reservation</h1>
-     <h2>Reserve your table</h2>
-     <p>Make your next visit to Oak & Steam a little more special.</p>
-     <label for="name">Name:</label>
-     <input type="text" id="name" name="name">
-      <br><br>
+     
 
-    <label for="email">Email:</label>
-     <input type="email" id="email" name="email">
-    <br>
-    <label for="date">Book Date:</label>
-    <input type="date" id="date" name="date">
-    <br>
-    <label for="people">Number of People:</label>
-    <input type="number" id="people" name="people" min="1">
-    <br>
-    <label for="request">Your Request:</label>
-    <br>
-    <textarea id="request" name="request" rows="5" cols="40"></textarea>
-    <br>
-    <button type="submit">Book a Table</button>
-     <footer>
-         <h3>Follow Us</h3>
+<footer>
+    <div class="footercont">
+        <!-- Logo Column -->
+        <div class="footer">
+            <div class="logofooter">
+                <img src="IMAGES/footer.png" alt="Oak & Steam">
+            </div>
+        </div> <!-- ADDED MISSING CLOSING TAG HERE -->
 
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <h4>Working Hours:</h4>
-            Monday- Friday 10am - 6pm
-            <br> 
-            Saturday - Sunday 10am - 2pm
-            <br>
-            Public holidays - 10am - 1pm
-        <h4>Futher Links:</h4>
-        <ul>
-           <li><a href="index.html">Home</a></li> 
-           <li><a href="about_us.html">About Us</a></li> 
-            <li><a href="product.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-           <li><a href="contact.html">Contact</a></li> 
-          <li><a href="reservation.html">Reservation</a></li>
-        </ul>
+        <!-- Working Hours Column -->
+        <div class="column">
+            <h4>Working Hours</h4>
+            <p>Mon - Fri 07:00 - 19:00</p>
+            <p>Sat - Sun 08:00 - 18:00</p>
+            <p>Public Holiday 08:00 - 16:00</p>
+        </div>
+
+       
+        <div class="linkcol">
+            <h4>Further Link</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </div>
+    </div>
+
+  
+    <div id="copy">
         <p>2026 Oak & Steam Copyright Reserved</p>
-    </footer>
+    </div>
+</footer>
+
+
+
 </body>
 </html>
