@@ -4,76 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak & Steam</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
      <header>
-        <nav>
-            <img src="IMAGES/logo.png" alt="oak & steam" height="100px" width="100px">
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="product.html">Products</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-           <button><a href="reservation.html">Reservation</a></button> 
+        <nav class="Navigation">
+            <div id="logo"> 
+                <img src="IMAGES/logo.png" alt="oak & steam">
+            </div>
+            <ul class="Links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a   href="product.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a class="reservationbtn" href="reservation.html">Reservation</a></li>
+           </ul>
         </nav>
     </header>
-    <img src="IMAGES/enquiry banner.png" height="100%" width="100%">
-    <h1>Contact</h1>
-    <p>Let’s keep in touch, one brew at a time.</p>
-    <h2>Get In Touch With Us</h2>
-     <h3>Phone</h3>
-     <p>012 345 6789</p>
-     <h3>WhatsApp</h3>
-     <p>071 234 5678</p>
-     <h3>Email</h3>
-    <p>info@oakandsteam.com</p>
-    <h3>Shop</h3>
-    <p>Visit us at our cafe.</p>
-     <h2>Find Us</h2>
-      <p>
-         Oak & Steam Cafe<br>
-        Pretoria, South Africa
-        </p>
+   <main>
+   
+    <section class="contact">
+        <div class="contactcont">
+           <picture>
+                    <!-- Mobile view image (screens up to 768px wide) -->
+            <source media="(max-width: 48rem)" srcset="IMAGES/enquiry banner.png 600w" sizes="100vw">
+            <img src="IMAGES/enquiry banner.png" 
+                         srcset="IMAGES/enquiry banner.png 1200w" 
+                         sizes="100vw" 
+                         alt="Oak and Steam Cafe Interior">
+                </picture>
+            
+            <!-- Centered Brown Overlay Badge -->
+            <div class="contactb">
+                <h1>Contact Us!</h1>
+                <p class="tagline">Let’s keep in touch, one brew at a time.</p>
+            </div>
+        </div>
+    </section>
+  
+<section class="contactmain">
+    <h2>Get in Touch with Us!</h2>
+
+    <div class="contactcards">
+        
+       
+        <div class="contactinfocard browncard">
+            <h3>Contact Us On:</h3>
+            
+            <div class="infobox">
+                <h4>Phone Number:</h4>
+                <p>(+62) 81 574 6591</p>
+            </div>
+
+            <div class="infobox">
+                <h4>Email:</h4>
+                <p>Oak&Steam19@gmail.com</p>
+            </div>
+
+            <div class="infobox">
+                <h4>Address:</h4>
+                <p>Brooklyn Mall, Shop 10<br>Cnr Veale Street, and, Fehrsen St, Nieuw Muckleneuk, Pretoria, 0145</p>
+            </div>
+        </div>
+
+        
+        <div class="feedbackcard sagecard">
+            <h3>Feedback</h3>
+            
+            <form action="#" method="POST">
+                <div class="formgroup">
+                    <input type="text" name="name" placeholder="Name & Surname" required>
+                </div>
+                
+                <div class="formgroup">
+                    <input type="tel" name="phone" placeholder="Phone Number (optional)">
+                </div>
+                
+                <div class="formgroup">
+                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                
+                <div class="submitbtn">
+                    <button type="submit" class="submitbtn">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Google Maps Embed Below Cards -->
+    <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28745.18467259761!2d28.247530969040792!3d-25.765671867759544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561095ab7848b%3A0x3d73dfcf86011c5a!2sBrooklyn%20Mall!5e0!3m2!1sen!2sza!4v1786742815345!5m2!1sen!2sza"
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
         </iframe>
-    <h2>Feedback</h2>
-     <label for="feedback-name">Name:</label>
-        <input type="text" id="feedback-name" name="feedback-name">
-        <br>
-         <label for="surname">Surname:</label>
-         <input type="text" id="surname" name="surname">
-        <br>
-        <label for="feedback-message">Message:</label>
-        <br>
-        <textarea id="feedback-message" name="feedback-message" rows="5" cols="30">
-        </textarea>
-        <br>
-       <button type="submit">Submit</button>
+    </div>
+</section>
 
-       <footer>
-         <h3>Follow Us</h3>
+<!-- FOOTER -->
+<footer>
+    <div class="footercont">
+      
+        <div class="footer">
+            <div class="logofooter">
+                <img src="IMAGES/footer.png" alt="Oak & Steam">
+            </div>
+        </div> 
 
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <h4>Working Hours:</h4>
-            Monday- Friday 10am - 6pm
-            <br> 
-            Saturday - Sunday 10am - 2pm
-            <br>
-            Public holidays - 10am - 1pm
-        <h4>Futher Links:</h4>
-        <ul>
-           <li><a href="index.html">Home</a></li> 
-           <li><a href="about_us.html">About Us</a></li> 
-            <li><a href="product.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-           <li><a href="contact.html">Contact</a></li> 
-          <li><a href="reservation.html">Reservation</a></li>
-        </ul>
+        <!-- Working Hours  -->
+        <div class="column">
+            <h4>Working Hours</h4>
+            <p>Mon - Fri 07:00 - 19:00</p>
+            <p>Sat - Sun 08:00 - 18:00</p>
+            <p>Public Holiday 08:00 - 16:00</p>
+        </div>
+
+        <!-- Links -->
+        <div class="linkcol">
+            <h4>Further Link</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </div>
+    </div>
+
+   
+    <div id="copy">
         <p>2026 Oak & Steam Copyright Reserved</p>
-    </footer>
+    </div>
+</footer>
+
+
 
 
 
