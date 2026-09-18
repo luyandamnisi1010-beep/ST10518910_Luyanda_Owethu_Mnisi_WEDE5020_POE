@@ -4,72 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak & Steam Enquiry</title>
+      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-       
-        <nav>
-            <img src="IMAGES/logo.png" alt="oak & steam" height="100px" width="100px">
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="product.html">Products</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-           <button><a href="reservation.html">Reservation</a></button> 
+     <header>
+        <nav class="Navigation">
+            <div id="logo"> 
+                <img src="IMAGES/logo.png" alt="oak & steam">
+            </div>
+            <ul class="Links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a   href="product.html">Products</a></li>
+            <li><a class="active" href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="reservationbtn" href="reservation.html">Reservation</a></li>
+           </ul>
         </nav>
-        <br>
     </header>
-    <img src="IMAGES/enquiry banner.png" height="100%" width="100%">
-    <h1>Enquiry</h1>
-    <p>Curious? Let’s brew up some answers</p>
+   <main>
+    <section class="enquiry-hero">
+            <div class="enquiry-banner-container">
+                <img src="IMAGES/enquiry banner.png">
+                
+                <!-- Brown Center Overlay Badge -->
+                <div class="enquiry-badge">
+                    <h1>Enquiry</h1>
+                    <p class="tagline">Have a question? We’d love to hear from you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="enquiry-main-section">
 
-    <h2>Enquire With Us!</h2>
-     <label for="name">Name & Surname:</label>
-                <input type="text" id="name" name="name">
-                <br>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                 <br>
-                <label for="message">Message:</label>
-                <br>
-                <textarea id="message" name="message" rows="5" cols="30"></textarea>
-                <br>
-                <button type="submit">Submit</button>
+    <!-- ENQUIRE WITH US FORM -->
+    <div class="form-container">
+        <h2>Enquire With Us!</h2>
+        
+        <form class="sage-form-card" action="#" method="POST">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Name & Surname" required>
+                <input type="tel" name="phone" placeholder="Phone Number (optional)">
+            </div>
+            
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            
+            <div class="submit-btn-wrapper">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
 
-                <h2>Frequently Asked Questions:</h2>
-                <p>Do I need to make a reservation?</p>
-                <p>Reservations are recommended, especially during busy hours.</p>
-                <p>Do you offer takeaway?</p>
-                <p>Yes, our food and drinks are available for takeaway.</p>
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
 
-                <p>Can I enquire about private events?</p>
-                <p>Yes, send us an enquiry and our team will get back to you.</p>
-    <footer>
-         <h3>Follow Us</h3>
+        <div class="brown-faq-card">
+           
+            <details class="faq-item" open>
+                <summary>
+                    <span>Does Oak & Steam support local suppliers?</span>
+                    <span class="arrow">v</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Yes. We aim to source fresh, locally produced ingredients whenever possible and support local suppliers in our community.</p>
+                </div>
+            </details>
 
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <h4>Working Hours:</h4>
-            Monday- Friday 10am - 6pm
-            <br> 
-            Saturday - Sunday 10am - 2pm
-            <br>
-            Public holidays - 10am - 1pm
-        <h4>Futher Links:</h4>
-        <ul>
-           <li><a href="index.html">Home</a></li> 
-           <li><a href="about_us.html">About Us</a></li> 
-            <li><a href="product.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-           <li><a href="contact.html">Contact</a></li> 
-          <li><a href="reservation.html">Reservation</a></li>
-        </ul>
+         
+            <details class="faq-item">
+                <summary>
+                    <span>Does Oak & Steam sell halal food?</span>
+                    <span class="arrow">v</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>All our meats are sourced from certified Halal suppliers, and our kitchen strictly avoids non-halal ingredients. Please ask our staff for detailed dietary information!</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Are there accessible facilities available?</span>
+                    <span class="arrow">v</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Yes, our cafe is fully step-free with wide doorways and accessible restroom facilities to ensure a comfortable visit for all guests.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+
+</section>
+   </main>
+
+   
+    
+<!-- FOOTER -->
+<footer>
+    <div class="footercont">
+     
+        <div class="footer">
+            <div class="logofooter">
+                <img src="IMAGES/footer.png" alt="Oak & Steam">
+            </div>
+        </div>
+
+        <!-- Working Hours Column -->
+        <div class="column">
+            <h4>Working Hours</h4>
+            <p>Mon - Fri 07:00 - 19:00</p>
+            <p>Sat - Sun 08:00 - 18:00</p>
+            <p>Public Holiday 08:00 - 16:00</p>
+        </div>
+
+       
+        <div class="linkcol">
+            <h4>Further Link</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </div>
+    </div>
+
+   
+    <div id="copy">
         <p>2026 Oak & Steam Copyright Reserved</p>
-    </footer>
+    </div>
+</footer>
 
     
 </body>
