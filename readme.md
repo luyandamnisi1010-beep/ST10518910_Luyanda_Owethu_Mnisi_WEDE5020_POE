@@ -85,7 +85,8 @@ about us | |i added new information on top of the old information by adding sage
 product|| i added new products to the product page as well as new description|
 || || Sir you gave me two marks for reference where as i actually referenced and i also added site mapping 
 enquiry|| i added a sage card so the input text and text area can be organised|
-contact| i kept some information, i added new numbers, email but the address is still the same
+contact| i kept some information, i added new numbers, email but the address is still the same|
+reservation| | information is still the same changes added were css text field for input and sage card|
 
 
 # References # 
@@ -119,6 +120,25 @@ contact| i kept some information, i added new numbers, email but the address is 
 <http://pexels.com/photo/https://www.pexels.com/photo/delicious-raspberry-danish-pastries-on-tray-38430719/>  [Accessed 12 August 2026].
 - Pexels, 2021. *a-display-counter-in-a-cafe*. [online] Availabe at: 
 <https://www.pexels.com/photo/a-display-counter-in-a-cafe-8909525/>  [Accessed 12 August 2026].
+- Department for Education (2023) Responsive Web Design with HTML5 and CSS3. Available at: https://www.youtube.com/watch?v=srvUrASNj0s (Accessed: 18 September 2026).
+
+- FreeCodeCamp (2022) HTML & CSS Full Course - Beginner to Pro. Available at: https://www.youtube.com/watch?v=mU6anWqZJcc (Accessed: 18 September 2026).
+
+- Kevin Powell (2021) How to Write Responsive CSS Using rem and em Units. Available at: https://www.youtube.com/watch?v=N5wpD9OV_To (Accessed: 18 September 2026).
+
+- Kevin Powell (2022) The Picture Element in HTML: Responsive Images Made Easy. Available at: https://www.youtube.com/watch?v=R9_mS9sO9B8 (Accessed: 18 September 2026).
+
+- MDN Web Docs (2024) Building Form Layouts with CSS Flexbox. Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation (Accessed: 18 September 2026).
+
+- MDN Web Docs (2025) Responsive Images and the HTML  Element. Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_responsive_images (Accessed: 18 September 2026).
+
+- Simplilearn (2023) HTML and CSS Flexbox Tutorial for Beginners. Available at: https://www.youtube.com/watch?v=FYErehuSuuw (Accessed: 18 September 2026).
+
+- Traversy Media (2020) HTML & CSS Crash Course: Navigation Bar & Footer Layouts. Available at: https://www.youtube.com/watch?v=ub36thA4-hs (Accessed: 18 September 2026).
+
+- Traversy Media (2021) Responsive Contact & Reservation Form Design. Available at: https://www.youtube.com/watch?v=yfoY53QXEnI (Accessed: 18 September 2026).
+
+- W3Schools (2024) CSS Layout - Flexbox and Media Queries. Available at: https://www.w3schools.com/css/css3_flexbox.asp (Accessed: 18 September 2026).
 
 
 
