@@ -90,6 +90,10 @@ enquiry|| i added a sage card so the input text and text area can be organised|
 contact| |i kept some information, i added new numbers, email but the address is still the same
 reservation| | information is still the same changes added were css text field for input and sage card|
  Part 3 
+ SEO | | Added descriptions in meta tags, title, off and on page , off page social media , added keywords, added detailed alt descriptions
+ Fixes || fixed footer, made the message textarea not resizeable, fix visability of the images on the home page, fixed the card view.
+ 
+
 
 
 # References # 
