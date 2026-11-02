@@ -70,23 +70,26 @@ Contains important links and basic café information.
 # Changelog #
 | commit | Date| changes made |
 |---------|----------|----------|
+ Part 1 
 1st commit| 13 Aug 2026 | Created home page |
 2nd commit||Created About Us page|
-3rd commit| |added image|
+3rd commit| ||added image|
 4th commit| |added image|
 6th commit||added product page |
 7th commit|14 Aug |updated About Us & enquiry page banner and page|
 8th commit| |updated all pageds and the reservation page|
 final commit| | updated all pages 
 and added readme file.
+Part 2 
 css commit| 19 Sept 2026 |added head and footer that has active and hover 
 changes made |19 Sept 2026 |removed all html info and added new information and picture like the circle plate image , i added more sections like the explore page , i added a green section that explains a brief history of oak and steam.|
 about us | |i added new information on top of the old information by adding sage cards that includes a tagline, also a our story section which explains oak and steam's story, i added a white card with goldish borders, and a why choose us section that gives an explanation and there is a section of come join our story|
 product|| i added new products to the product page as well as new description|
 || || Sir you gave me two marks for reference where as i actually referenced and i also added site mapping 
 enquiry|| i added a sage card so the input text and text area can be organised|
-contact| i kept some information, i added new numbers, email but the address is still the same|
+contact| |i kept some information, i added new numbers, email but the address is still the same
 reservation| | information is still the same changes added were css text field for input and sage card|
+ Part 3 
 
 
 # References # 
