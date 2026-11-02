@@ -47,6 +47,11 @@
         </div>
         </div>
     </section>
+
+    <!-- LIVE SEARCH BAR -->
+    <div class="product-search-container" style="text-align: center; margin: 20px 0;">
+        <input type="text" id="product-search-input" placeholder="Search coffee, tea, pastries..." style="width: 80%; max-width: 400px; padding: 12px 20px; border-radius: 25px; border: 1px solid #ccc; font-family: 'Playfair Display', Georgia, serif; font-size: 16px; outline: none;">
+    </div>
     
 <nav class="category">
     <a href="#coffee" class="button">Coffee</a>
@@ -66,7 +71,7 @@
             
             <div class="product-card sage-card">
                 <div class="card-image">
-                    <img src="IMAGES/1.png">
+                    <img src="IMAGES/1.png" alt="Signature Flat White">
                 </div>
                 <h3>Signature Flat White</h3>
                 <p>Smooth espresso topped with micro-foamed milk and delicate latte art.</p>
@@ -77,7 +82,7 @@
             
             <div class="product-card sage-card">
                 <div class="card-image">
-                    <img src="IMAGES/2.png">
+                    <img src="IMAGES/2.png" alt="Classic Americano">
                 </div>
                 <h3>Classic Americano</h3>
                 <p>Rich espresso shots diluted with hot water for a bold, crisp finish.</p>
@@ -88,7 +93,7 @@
            
             <div class="product-card sage-card">
                 <div class="card-image">
-                    <img src="IMAGES/4.png">
+                    <img src="IMAGES/4.png" alt="Vanilla Cappuccino">
                 </div>
                 <h3>Vanilla Cappuccino</h3>
                 <p>Rich espresso layered with steamed milk, creamy foam, and subtle vanilla notes.</p>
@@ -105,7 +110,7 @@
             <!-- Card 1 -->
             <div class="product-card tan-card">
                 <div class="card-image">
-                    <img src="IMAGES/6.png">
+                    <img src="IMAGES/6.png" alt="Jasmine Blossom Green Tea">
                 </div>
                 <h3>Jasmine Blossom Green Tea</h3>
                 <p>Delicate green tea infused with whole blooming jasmine flowers and herbs.</p>
@@ -116,7 +121,7 @@
             
             <div class="product-card tan-card">
                 <div class="card-image">
-                    <img src="IMAGES/5.png">
+                    <img src="IMAGES/5.png" alt="Spiced Citrus Apple Infusion">
                 </div>
                 <h3>Spiced Citrus Apple Infusion</h3>
                 <p>Warm herbal tea steeped with dried fruit, apple, and whole aromatic spices.</p>
@@ -127,7 +132,7 @@
            
             <div class="product-card tan-card">
                 <div class="card-image">
-                    <img src="IMAGES/8.png">
+                    <img src="IMAGES/8.png" alt="Hibiscus Floral Elixir">
                 </div>
                 <h3>Hibiscus Floral Elixir</h3>
                 <p>Rich ruby herbal brew garnished with delicate edible pink petals.</p>
@@ -144,7 +149,7 @@
             
             <div class="product-card sage-card">
                 <div class="card-image">
-                    <img src="IMAGES/Golden Fold.jpg" alt="Chocolate Slice">
+                    <img src="IMAGES/Golden Fold.jpg" alt="Golden fold">
                 </div>
                 <h3>Golden fold</h3>
                 <p>Freshly baked crosants straight from the oven with syrup.</p>
@@ -155,7 +160,7 @@
            
             <div class="product-card sage-card">
                 <div class="card-image">
-                    <img src="IMAGES/Melt & Crack.jpg" alt="Fruit Tart">
+                    <img src="IMAGES/Melt & Crack.jpg" alt="Melt and Crack">
                 </div>
                 <h3>Melt and Crack</h3>
                 <p>Rich and freshly baked cookied with a milky taste.</p>
@@ -166,7 +171,7 @@
            
             <div class="product-card sage-card">
                 <div class="card-image">
-                    <img src="IMAGES/pexels-valeriya-19499030.jpg" alt="Raspberry Tart">
+                    <img src="IMAGES/pexels-valeriya-19499030.jpg" alt="Croisant with pesto">
                 </div>
                 <h3>Croisant with pesto</h3>
                 <p>fresh baked croisant with green pesto.</p>
@@ -178,15 +183,14 @@
 
 </section>
 
+<!-- LIGHTBOX MODAL OVERLAY -->
+    <div id="lightbox-modal" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged menu item">
+    </div>
 
+</main>
 
-
-
-
-
-
-
-<!-- FOOTER -->
 <!-- FOOTER -->
 <footer>
     <div class="footercont">
@@ -195,7 +199,7 @@
             <div class="logofooter">
                 <img src="IMAGES/footer.png" alt="Oak & Steam">
             </div>
-        </div> <!-- ADDED MISSING CLOSING TAG HERE -->
+        </div>
 
         <!-- Working Hours Column -->
         <div class="column">
@@ -206,22 +210,18 @@
         </div>
         <div class="linkcol">
             <h4>Social Media </h4>
-          
              <p><a href="https://www.instagram.com/oak_and_steam?xtok=Z2ZqaHZrYWM4dmZ6&utm_source=qr">Instagram</a></p>
-          
         </div>
 
         <!-- Links Column -->
         <div class="linkcol">
             <h4>Further Link</h4>
-            
                 <P><a href="index.html">Home</a></P>
                 <P><a href="about_us.html">About Us</a></P>
                 <P><a href="product.html">Products</a></P>
                 <p><a href="contact.html">Contact</a></p>
                 <p><a href="enquiry.html">Enquiry</a></p>
                 <p><a href="reservation.html">Reservations</a></p>
-            
         </div>
     </div>
 
@@ -231,7 +231,6 @@
     </div>
 </footer>
 
-
-
+<script src="JS/javascript.js"></script>
 </body>
 </html>

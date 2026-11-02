@@ -604,7 +604,50 @@ footer {
 
 
 
+/* --- SLOWER SCROLL ANIMATION FOR FIRST SECTION --- */
 
+/* Initial hidden states before scrolling into view */
+.firstSec .Text {
+    opacity: 0;
+    transform: translateX(-80px); /* Pushed to the left */
+    /* Changed from 1s to 1.8s to make it slower and smoother */
+    transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.firstSec .image {
+    opacity: 0;
+    transform: translateX(80px); /* Pushed to the right */
+    /* Changed from 1s to 1.8s to make it slower and smoother */
+    transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active states when triggered by JavaScript observer */
+.firstSec.animate-in .Text,
+.firstSec.animate-in .image {
+    opacity: 1;
+    transform: translateX(0); /* Slides smoothly back to original position */
+}
+/* --- GENTLE CARD SWAY / SCROLL ANIMATION --- */
+
+@keyframes cardSway {
+    0%, 100% {
+        transform: translateX(0); /* Starts and ends centered */
+    }
+    50% {
+        transform: translateX(-40px); /* Shifts just a bit to the left at the 3-second mark */
+    }
+}
+
+/* --- ZOOM HOVER EFFECT FOR ABOUT SECTION IMAGE --- */
+
+.aboutimg img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.aboutimg img:hover {
+    transform: scale(1.12); /* Scales the image up smoothly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Adds a smooth shadow */
+}
 
 
 /* About US */
@@ -1264,6 +1307,9 @@ html {
 .tan-card {
     background-color: #D8C7AD; /* Warm tan background */
 }
+.tan-card {
+    background-color: #FFD27D; /* Warm tan background */
+}
 
 .card-image {
     width: 100%;
@@ -1320,7 +1366,63 @@ html {
 }
 
 
+/* Make menu images show a pointer cursor on hover */
+.products-menu-container .card-image img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
 
+.products-menu-container .card-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Lightbox Modal Background Overlay */
+.lightbox-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enlarged Lightbox Image */
+
+.lightbox-content {
+    max-width: 95%;      /* Increased from 85% to take up almost the full width */
+    max-height: 95vh;    /* Increased from 85vh to take up almost the full height */
+    width: auto;         /* Keeps original aspect ratio */
+    height: auto;        /* Keeps original aspect ratio */
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Lightbox Close Button */
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.lightbox-close:hover {
+    color: #D3B33D;
+}
 
 
 
@@ -1559,7 +1661,84 @@ html {
 }
 
 
+/* --- Error Message Styling --- */
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.error-text {
+    color: #d9534f; /* Clear red error color */
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 5px;
+    min-height: 18px; /* Keeps layout stable when errors show/hide */
+    text-align: left;
+}
+
+/* --- Success Popup Modal Styling --- */
+.success-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.success-modal-card {
+    background-color: #B5C0A4; /* Matches your sage green card theme */
+    padding: 40px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    animation: popupFadeIn 0.3s ease;
+}
+
+.success-modal-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1F1610;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.success-modal-card p {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #2D1E18;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.success-modal-btn {
+    background-color: #D3B33D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.success-modal-btn:hover {
+    background-color: #BBA032;
+}
+
+@keyframes popupFadeIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
 
 
 
@@ -1773,11 +1952,181 @@ html {
 
 
 
+/* --- Error Message Styling --- */
+.error-text {
+    color: #ff4d4d;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 2px;
+    text-align: left;
+}
 
+/* --- Success Popup Modal Styling --- */
+.success-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.success-modal-card {
+    background-color: #B5C0A4;
+    padding: 40px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    animation: popupFadeIn 0.3s ease;
+}
+
+.success-modal-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1F1610;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.success-modal-card p {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #2D1E18;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.success-modal-btn {
+    background-color: #D3B33D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.success-modal-btn:hover {
+    background-color: #BBA032;
+}
+
+@keyframes popupFadeIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+/*-RESERVATION-*/
 .inputbox .textareainput {
     resize: none;
 }
+/* --- Error Message Styling --- */
+.error-text {
+    color: #d9534f;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+    margin-left: 2px;
+    text-align: left;
+    min-height: 16px;
+}
 
+/* --- Success Popup Modal Styling --- */
+.success-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.success-modal-card {
+    background-color: #B5C0A4; /* Sage green matching website theme */
+    padding: 35px 30px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    max-width: 450px;
+    width: 90%;
+    animation: popupFadeIn 0.3s ease;
+}
+
+.success-icon {
+    font-size: 45px;
+    color: #D3B33D; /* Mustard yellow matching submit button */
+    margin-bottom: 10px;
+}
+
+.success-modal-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1F1610;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.success-modal-card > p {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #2D1E18;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.reservation-details-box {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-align: left;
+    margin-bottom: 25px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.reservation-details-box p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 6px 0;
+}
+
+.success-modal-btn {
+    background-color: #D3B33D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.success-modal-btn:hover {
+    background-color: #BBA032;
+}
+
+@keyframes popupFadeIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
 
 
 
