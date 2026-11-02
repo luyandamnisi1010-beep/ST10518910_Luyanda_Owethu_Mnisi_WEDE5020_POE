@@ -92,6 +92,10 @@ reservation| | information is still the same changes added were css text field f
  Part 3 
  SEO | | Added descriptions in meta tags, title, off and on page , off page social media , added keywords, added detailed alt descriptions
  Fixes || fixed footer, made the message textarea not resizeable, fix visability of the images on the home page, fixed the card view.
+ animation, lightbox and pop up|| added animation on the home page (the first section slides in as users scrolls, the second section slides from side to side, and the thrird section the image pops up), added animation on the products page (all images in the menu become large when hovered over), added a search and filter feature
+ javaScript || Added javaScript for all page so the animation and lightbox function
+ Responsive Design || Added media code so website can respond to media (not fully working but it functions)
+ link || fixed links between pages 
  
 
 
