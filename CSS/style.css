@@ -2156,7 +2156,167 @@ html {
 
 
 
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES FOR TABLETS & MOBILE PHONES
+   ========================================================================== */
 
+/* --- TABLETS AND MEDIUM SCREENS (Max-width: 992px) --- */
+@media screen and (max-width: 992px) {
+    /* General Container Adjustments */
+    .aboutcontainer,
+    .joinstorycontainer,
+    .storycontent,
+    .storycard1 {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .aboutimage, .aboutimg, .textabout,
+    .joinimage, .jointext,
+    .storyimage, .storytext,
+    .ourstorytext, .ourstoryimage {
+        width: 100% !important;
+    }
+
+    .ourstoryimage {
+        height: 320px;
+    }
+
+    /* Product & Feature Grids drop to 2 columns on tablets */
+    .product-grid, .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+    }
+
+    /* Vision & Mission card stacks */
+    .visionmission {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    /* Contact Cards stack */
+    .contactcards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* --- MOBILE PHONES AND SMALL SCREENS (Max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+    /* Prevent horizontal page scrolling */
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Header & Navigation adjustments for mobile */
+    header {
+        padding: 8px 15px;
+    }
+
+    .Navigation {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .Links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .Links a {
+        font-size: 13.5px;
+    }
+
+    /* Hero Sections & Banners */
+    .firstSec {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .firstSec .Text, .firstSec .image {
+        width: 100% !important;
+    }
+
+    .Text h1 {
+        font-size: 28px !important;
+    }
+
+    .Text p {
+        font-size: 16px !important;
+    }
+
+    .image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 20px;
+    }
+
+    /* Product & Feature Grids drop to 1 single column on mobile */
+    .product-grid, .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .cards, .card1, .card2, .product-card {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    /* Cards container animation override for mobile to prevent overflow */
+    .cardscontainer {
+        animation: none !important; /* Disables side-to-side sway on small touch screens to avoid scrolling */
+        flex-direction: column;
+        align-items: center;
+        margin-top: -40px;
+    }
+
+    /* Banners & Badges */
+    .aboutusbanner, .banner1, .enquiry-banner-container, .contactcont {
+        height: 280px !important;
+    }
+
+    .banner, .enquiry-badge, .contactb {
+        width: 90% !important;
+        padding: 15px 20px !important;
+    }
+
+    .banner h1, .enquiry-badge h1, .contactb h1 {
+        font-size: 24px !important;
+    }
+
+    /* Forms & Inputs */
+    .inputrow, .form-row {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .smallbox {
+        flex: 1 1 100% !important;
+    }
+
+    .card, .sage-form-card, .brown-faq-card {
+        padding: 20px 15px !important;
+        border-radius: 20px;
+    }
+
+    /* Footer adjustments */
+    .footercont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 0 15px 30px 15px;
+    }
+
+    .footer, .column, .linkcol {
+        width: 100%;
+    }
+}
 
 
 
