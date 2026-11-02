@@ -648,7 +648,29 @@ footer {
     transform: scale(1.12); /* Scales the image up smoothly */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Adds a smooth shadow */
 }
+/* --- CONTINUOUS CARD SWAY ANIMATION --- */
 
+@keyframes cardSway {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-30px); /* Moves left */
+    }
+    50% {
+        transform: translateX(0);     /* Moves back center */
+    }
+    75% {
+        transform: translateX(30px);  /* Moves right */
+    }
+    100% {
+        transform: translateX(0);     /* Returns center */
+    }
+}
+
+.cardscontainer {
+    animation: cardSway 11s linear infinite; /* 'linear' keeps it moving at a constant, steady speed */
+}
 
 /* About US */
 
